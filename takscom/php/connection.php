@@ -13,20 +13,8 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
     $con = mysqli_connect($server, $dbusername, $password, $dbname);
 
-
-    try {
-        $con=new PDO($dbname,'root','');
-        echo 'connected';
-    } catch (PDOException $err) {
-        echo "error accoured, erros message is :". $err->getMessage();
-    }
-
-
-
-
     if(!$con){
         die("DataBase Connect is: ".mysqli_connect_error());
-        
     } 
 
     ?>
