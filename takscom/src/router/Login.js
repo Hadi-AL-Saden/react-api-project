@@ -8,7 +8,7 @@ function Login(){
 
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
-      axios.get(`http://localhost/yt-react-weather-app/php/readuser.php`)
+      axios.get(`http://localhost/react-api-project/Takscom/php/readuser.php`)
           .then((response) => {
               setAPIData(response.data);
               console.log(response.data,"res.data")
@@ -58,8 +58,9 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-            window.location.href = {"../Home":+el.id};
-           
+            // window.location.href = {"/":+el.id};
+            window.location.href = "/weather";
+
            }else{
             //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
                document.getElementById('e1').style.display="block";

@@ -61,7 +61,7 @@ function Weather() {
           </div>
         )}
   
-        <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} />
+        <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} style={{marginTop:'69px'}} />
       </div>
     );
 }

@@ -12,9 +12,9 @@ import AppRouter from './AppRouter';
 function NavScrollExample() {
   return (
     <>
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="sm">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Takscom</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -22,32 +22,20 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="http://localhost:3000/home">Home</Nav.Link>
-            <Nav.Link href="http://localhost:3000/weather">Weather</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="http://localhost:3000/login">Login</NavDropdown.Item>
-              <NavDropdown.Item href="http://localhost:3000/signup">Sign-up</NavDropdown.Item>
-              {/* <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item> */}
-              <NavDropdown.Divider />
-              {/* <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item> */}
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            
+            <Nav.Link  href="http://localhost:3000/home">Home</Nav.Link>
+            <Nav.Link href="http://localhost:3000/weather" >Weather</Nav.Link>
+         
+
+
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+
+        </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end">
+          
+          <Nav.Link href="http://localhost:3000/login">Login</Nav.Link>
+            <Nav.Link href="http://localhost:3000/signup">Sign-up</Nav.Link>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

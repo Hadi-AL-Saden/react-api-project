@@ -52,7 +52,7 @@ export default class UserForm extends Component {
       let phone = this.state.phone;
 
       axios.get(
-        "http://localhost/yt-react-weather-app/php/insertuser.php?name=" +
+        "http://localhost/react-api-project/Takscom/php/insertuser.php?name=" +
           name +
           "&email=" +
           email +
@@ -111,7 +111,7 @@ export default class UserForm extends Component {
     const { isError } = this.state;
 
     return (
-      <div className="register-photo " style={{ marginTop: "110px" }}>
+      <div className=" mx-auto max-w-screen-md mt-4 py-5 px-32" style={{backgroundColor:'white'}}>
         <div className="form-container ">
           <div className="image-holder" />
           <form id="regForm" className="d" onSubmit={this.onSubmit} noValidate>
@@ -187,7 +187,7 @@ export default class UserForm extends Component {
 
               <button
                 type="submit"
-                className="btn btn-block "
+                className="btn btn-block mt-5"
                 style={{ backgroundColor: "#FDBE33" }}
               >
                 Sign Up{" "}
